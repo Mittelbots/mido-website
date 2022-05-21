@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url('./assets/backtotop.css');
+@import url('./assets/nav.css');
+@import url('./assets/custom.css');
 
 * {
   font-family: "Poppins", sans-serif;
@@ -16,108 +19,14 @@ html {
   background-color: #1a2634 !important;
 }
 
-#backtotop {
-  display: inline-block;
-  background-color: #7289da;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  border-radius: 4px;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 1000;
+.footer {
+  background-image: url('../img/cat.svg');
+  background-position: 90%;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-#backtotop:hover {
-  cursor: pointer;
-  background-color: #333;
-}
-
-#backtotop:active {
-  background-color: #555;
-}
-
-#backtotop.show {
-  opacity: 0.4;
-  visibility: visible;
-}
-
-.navbar-item,
-.navbar-link {
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-
-.navbar-item:hover {
-  background-color: transparent !important;
-  color: #7289da !important;
-}
-
-.navbar-link:hover {
-  background-color: transparent !important;
-  color: #7289da !important;
-}
-
-.navbar-menu {
-  animation: navAnimOpen 0.2s ease-in-out;
-}
-
-@keyframes navAnimOpen {
-  0% {
-    display: none;
-    opacity: 0;
-    max-height: 0;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    max-height: 396px;
-  }
-  from {
-    opacity: 0;
-    transform: translateY(-5px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
-
-nav,
-.navbar-menu {
-  background-color: #1a2634 !important;
-}
-
-.navbar-item.nav-dark,
-.navbar-link.nav-dark {
-  color: #363636 !important;
-}
-
-.navbar-item,
-.navbar-link {
-  color: white !important;
-}
-
-nav.nav-w {
-  background: #fff !important;
-  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1) !important;
-}
-
-.nav-w {
-  background: #fff !important;
-  box-shadow: 100px 2px 10px rgba(0, 0, 0, 0.1) !important;
-}
-
-.mb-12 {
+.\templates\free-website-templatesmb-12 {
   margin-bottom: 6rem;
 }
 

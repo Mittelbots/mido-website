@@ -1,8 +1,3 @@
-<!--
-  | Website designed by JstnLT (https://jstnlt.my.id)
-  | This project is open source: https://github.com/JastinXyz/discord-bot-landing-page-web
--->
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -35,7 +30,7 @@
 
     <!-- Navbar Start -->
     <nav
-      class="navbar is-fixed-top"
+      class="navbar"
       role="navigation"
       aria-label="main navigation"
     >
@@ -109,8 +104,7 @@
 
     <!-- Hero Section Start -->
     <section class="hero bg-base is-fullheight">
-      <div class="hero-body">
-        <div class="">
+      <div class="hero-body mx-6 mx-9 top_left">
           <div class="columns">
             <div class="column mr-6 mt-12" data-aos="fade-up">
               <p class="title has-text-white has-text-weight-bold">
@@ -119,8 +113,26 @@
               <p class="subtitle has-text-grey-light is-size-6 mt-3">
                 Create Projects and Tasks. Be prepared for deadlines with reminders and protect your server tasks from evils with curtain permissions
               </p>
+              <ul class="content has-text-white">
+                <li>
+                  <img src="assets/img/check.svg" alt="check" />
+                  Unlimited Tasks & Projects
+                </li>
+                <li>
+                  <img src="assets/img/check.svg" alt="check" />
+                  No useless commands
+                </li>
+                <li>
+                  <img src="assets/img/check.svg" alt="check" />
+                  Custom Permissions
+                </li>
+                <li>
+                  <img src="assets/img/check.svg" alt="check" />
+                  Log system
+                </li>
+              </ul>
               <div class="buttons">
-                <a href="https://discord.com/api/oauth2/authorize?client_id=955561157756866581&permissions=387136&scope=bot%20applications.commands" class="button is-info">
+                <a href="https://discord.com/api/oauth2/authorize?client_id=955561157756866581&permissions=387136&scope=bot%20applications.commands" class="button is-info" target="_blank" rel="no-referrer noopener" >
                   <strong>Add To Discord</strong>
                 </a>
 
@@ -133,13 +145,12 @@
             <div class="column mt-6" data-aos="fade-left">
               <img
                 class="image has-image-centered vert-move mt-4"
-                src="assets/img/girl-writing-her-wish-list-in-paper.png"
+                src="assets/img/schedule-planning.svg"
                 alt="hero image"
-                style="width: 20rem;"
+                style="width: 180rem !important;"
               />
             </div>
           </div>
-        </div>
       </div>
       <div class="has-text-centered" data-tippy-content="Scroll Down">
         <a href="#features"
@@ -163,13 +174,13 @@
 
     <!-- Features Section Start -->
     <section id="features" class="section mt-6">
-      <div class="has-text-centered">
-        <h1 class="title lined">It's not just another bot with thousands of commands!</h1>
+      <div class="has-text-centered ">
+        <h1 class="title lined is-size-2 mb-5">It's not just another bot with thousands of commands!</h1>
         <div class="line line-center blurple"></div>
       </div>
 
       <!-- single feature start (Left) -->
-      <div class="single-feature">
+      <div class="single-feature mt-6">
         <div class="shape-right" data-aos="fade-up-left">
           <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -177,14 +188,21 @@
               d="M42.7,-62.9C50.9,-52.8,50.1,-34.4,51.7,-19.2C53.4,-4,57.4,8,56.6,20.8C55.8,33.7,50.1,47.4,39.9,53.8C29.6,60.1,14.8,59.1,0.4,58.5C-14,58,-28,57.9,-38,51.5C-48.1,45,-54.3,32.3,-61.3,18.1C-68.4,4,-76.4,-11.7,-71.9,-22.7C-67.4,-33.6,-50.4,-39.8,-36.3,-47.9C-22.2,-56.1,-11.1,-66.3,3.1,-70.5C17.2,-74.7,34.5,-72.9,42.7,-62.9Z"
               transform="translate(100 100)"
             />
-          </svg>
+          </svg>>
         </div>
 
         <div class="columns mt-6">
-          <div class="column mr-6">
-            <h4 class="title"><span class="blurple">Easy usage</span></h4>
-            <p class="subtitle mt-3">
-              Just type !todo and you'll find the way through it. If not, take a look at the Documentation
+          <div class="column mr-6 mx-9">
+            <h4 class="title is-size-2"><span class="blurple">Manage your task with one Command</span></h4>
+            <p class="subtitle mt-6">
+              Just type !todo and start adding your tasks by clicking Buttons.<br/>
+              <p class="subtitle mt-1">You have some Problems using the bot? Take a look at the Documentation</p>
+
+              <div class="buttons">
+                <a href="https://discord.com/api/oauth2/authorize?client_id=955561157756866581&permissions=387136&scope=bot%20applications.commands" class="button is-success" target="_blank" rel="no-referrer noopener" >
+                  <strong>Say goodbye to commands-mess</strong>
+                </a>
+              </div>
             </p>
           </div>
           <div class="column" data-aos="fade-left">
@@ -221,12 +239,40 @@
             />
           </div>
           <div class="column">
-            <h4 class="title">
-              <span class="has-text-primary">Permissions</span>
+            <h4 class="title is-size-2">
+              <span class="has-text-primary">Protect your Tasks</span>
             </h4>
-            <p class="subtitle mt-3">
-              If you want to prevent others from looking at tasks, editing tasks or deleting tasks you can setup a role based permissions system. For more information, take a look at our Documentation
+            <p class="subtitle mt-6">
+              If you want to prevent others from looking at tasks, editing tasks or deleting tasks you can setup a role based permissions system.
+              <br />
+              <ul class="perms_list">
+                <li>
+                  <img src="assets/img/lock.svg" alt="lock" />
+                  View Tasks
+                </li>
+                <li>
+                  <img src="assets/img/lock.svg" alt="lock" />
+                  Edit Tasks
+                </li>
+                <li>
+                  <img src="assets/img/lock.svg" alt="lock" />
+                  Add Projects
+                </li>
+                <li>
+                  <img src="assets/img/lock.svg" alt="lock" />
+                  View Archive
+                </li>
+                <li class="has-text-weight-bold">
+                  <img src="assets/img/lock.svg" alt="lock" />
+                  ... and more!
+                </li>
+              </ul>
             </p>
+            <div class="buttons mt-6">
+              <a href="https://discord.com/api/oauth2/authorize?client_id=955561157756866581&permissions=387136&scope=bot%20applications.commands" class="button is-warning" target="_blank" rel="no-referrer noopener" >
+                <strong>Protect your ToDo list!</strong>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -244,13 +290,39 @@
           </svg>
         </div>
 
-        <div class="columns mt-6">
-          <div class="column mr-6">
-            <h4 class="title">
-              <span class="has-text-warning">Free</span>
+        <div class="columns mt-12">
+          <div class="column mr-6 mx-9">
+            <h4 class="title is-size-2">
+              <span class="has-text-warning">Track actions</span>
             </h4>
-            <p class="subtitle mt-3">
-              We provide a fully free to use Bot at this moment. No Limits, no locked features!
+            <p class="subtitle mt-6">
+              If you want to track your and your teams actions in a separate channel you can setup our Logsystem. 
+              <br />
+              <br />
+              <span class="has-text-weight-bold">See if someone have</span>
+              <ul class="log_list">
+                <li>
+                  <img src="assets/img/log.svg" alt="log" />
+                  added a task
+                </li>
+                <li>
+                  <img src="assets/img/log.svg" alt="log" />
+                  edited a task
+                </li>
+                <li>
+                  <img src="assets/img/log.svg" alt="log" />
+                  deleted a task
+                </li>
+                <li class="has-text-weight-bold">
+                  <img src="assets/img/log.svg" alt="log" />
+                  ... and more!
+                </li>
+              </ul>
+              <div class="buttons mt-6">
+                <a href="https://discord.com/api/oauth2/authorize?client_id=955561157756866581&permissions=387136&scope=bot%20applications.commands" class="button is-info" target="_blank" rel="no-referrer noopener" >
+                  <strong>Start being a manager!</strong>
+                </a>
+              </div>
             </p>
           </div>
           <div class="column" data-aos="fade-left">
@@ -328,20 +400,20 @@
     <!-- Stats Section End -->
 
     <!-- Invite Section Start -->
-    <section class="section mt-6" style="display: grid; justify-content:center">
+    <section class="section mt-1 mb-6" style="display: grid; justify-content:center">
       <p class="title has-text-weight-bold">
-        Ready to try <span class="blurple">Mido</span>?
+        Ready to be a Pro?
       </p>
         <div class="buttons" style="justify-content: center;">
           <a href="https://discord.com/api/oauth2/authorize?client_id=955561157756866581&permissions=387136&scope=bot%20applications.commands" class="button is-info">
-            <strong>Add To Discord</strong>
+            <strong>Add Mido To Discord</strong>
           </a>
         </div>
     </section>
     <!-- Invite Section End -->
 
     <!-- Footer Section Start -->
-    <footer class="footer bg-base">
+    <footer class="footer bg-base" id="footer">
       <div class="content has-text-centered has-text-white">
         <div class="mb-2">
           <a href="https://discord.gg/5d5ZDFQM4E" class="has-text-white" target="_blank">
