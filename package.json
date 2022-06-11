@@ -4,7 +4,8 @@
   "description": "",
   "main": "server/index.js",
   "scripts": {
-    "dev": "nodemon server/index.js"
+    "dev_start": "NODE_ENV=development ./node_modules/.bin/netlify-lambda serve src",
+    "dev_build": "NODE_ENV=production ./node_modules/.bin/netlify-lambda build src"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,8 @@
     "express": "^4.18.1",
     "express-session": "^1.17.3",
     "nconf": "^0.12.0",
-    "nodemon": "^2.0.16"
+    "netlify-lambda": "^2.0.15",
+    "nodemon": "^2.0.16",
+    "serverless-http": "^3.0.1"
   }
 }

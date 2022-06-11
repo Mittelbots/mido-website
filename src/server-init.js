@@ -1,6 +1,7 @@
 const nconf = require('nconf');
 const cors = require('cors');
-const session = require('express-session')
+const session = require('express-session');
+
 
 module.exports = (app) => {
     app.use(cors());
