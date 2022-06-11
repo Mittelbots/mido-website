@@ -1,0 +1,25 @@
+{
+    "sessionSecret": "",
+    "domain": "",
+    "port": "8070",
+    "cors": {
+        "headers": {
+            "Access-Control-Allow-Origin": "https://",
+            "Access-Control-Allow-Methods": "POST, GET, OPTIONS",
+            "Access-Control-Allow-Headers": "Content-Type",
+            "Access-Control-Max-Age": 86400000000,
+            "withCredentials": true,
+            "Content-Type": "text/html"
+        }
+    },
+    "env": "development",
+    "routing": {
+        "homepage": "/",
+        "support": "/support",
+        "invite": "/invite"
+    },
+    "external_links": {
+        "support": "https://discord.gg/5d5ZDFQM4E",
+        "invite": ""
+    }
+}
