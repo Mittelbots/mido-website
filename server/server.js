@@ -1,6 +1,5 @@
 const express = require('express');
 const serverconfig = require('nconf');
-const serverless = require('serverless-http');
 
 const app = express();
 app.use(express.static('public'));
@@ -23,6 +22,4 @@ app.listen(serverconfig.get('port'), serverconfig.get('domain'), () => {
     }`);
 });
 
-app.use('/.netlify/functions/api', router);
 module.exports = app;
-module.exports.handler = serverless(app);
