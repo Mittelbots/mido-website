@@ -15,7 +15,7 @@ serverconfig.argv().env().file({file: './assets/json/config/config.json'});
 require('./server-init')(app, express);
 require('./route/mainroute')(app, router);
 
-app.listen(process.env.PORT, process.env.DOMAIN, () => {
+app.listen(process.env.PORT, () => {
     console.log(`http://${
         process.env.DOMAIN
     }:${process.env.PORT} server started on ${
