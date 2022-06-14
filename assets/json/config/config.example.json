@@ -1,7 +1,4 @@
 {
-    "sessionSecret": "",
-    "domain": "",
-    "port": "8070",
     "cors": {
         "headers": {
             "Access-Control-Allow-Origin": "https://",
@@ -12,7 +9,6 @@
             "Content-Type": "text/html"
         }
     },
-    "env": "development",
     "routing": {
         "homepage": "/",
         "support": "/support",
