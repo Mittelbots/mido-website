@@ -1,12 +1,12 @@
 const nconf = require('nconf');
 const cors = require('cors');
 const session = require('express-session');
-
+require('dotenv').config()
 
 module.exports = (app) => {
     app.use(cors());
     app.use(session({
-        secret: nconf.get('sessionSecret'),
+        secret: process.env.SESSION_SECRET,
         resave: true,
         saveUninitialized: true,
         cookie: {
@@ -16,7 +16,7 @@ module.exports = (app) => {
         }
     }));
     app.use((req, res, next) => {
-        res.header("Access-Control-Allow-Origin", nconf.get('cors:headers:Access-Control-Allow-Origin'));
+        res.header("Access-Control-Allow-Origin", nconf.get('cors:headers:Access-Control-Allow-Origin') + process.env.DOMAIN);
         res.header("Access-Control-Allow-Methods", nconf.get('cors:headers:Access-Control-Allow-Methods'));
         res.header("Access-Control-Allow-Headers", nconf.get("cors:headers:Access-Control-Allow-Headers"));
         res.header("Access-Control-Max-Age", nconf.get('cors:headers:Access-Control-Max-Age'));

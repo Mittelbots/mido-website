@@ -1,8 +1,8 @@
-module.exports = (app, router) => {
-    require('./sideroute/homepage-route.js')(app, router);
+module.exports = (app) => {
+    require('./sideroute/homepage-route.js')(app);
 
 
     //NO UI ROUTES
-    require('./noui/invite-route.js')(app, router);
-    require('./noui/support-route.js')(app, router);
+    require('./noui/invite-route.js')(app);
+    require('./noui/support-route.js')(app);
 }

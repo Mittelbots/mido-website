@@ -1,3 +1,4 @@
 node_modules
 assets/json/config/config.json
 functions
+.env
