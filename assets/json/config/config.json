@@ -16,6 +16,6 @@
     },
     "external_links": {
         "support": "https://discord.gg/5d5ZDFQM4E",
-        "invite": ""
+        "invite": "https://discord.com/api/oauth2/authorize?client_id=955561157756866581&permissions=387136&scope=bot%20applications.commands"
     }
 }
