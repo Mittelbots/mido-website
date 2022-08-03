@@ -5,7 +5,8 @@
   "main": "server/server.js",
   "scripts": {
     "dev": "nodemon server/server.js",
-    "prod": "pm2 start server/server.js --name mido-website"
+    "prod": "pm2 start server/server.js --name mido-website",
+    "restart": "pm2 restart mido-website"
   },
   "repository": {
     "type": "git",
